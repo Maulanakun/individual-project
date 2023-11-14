@@ -1,0 +1,72 @@
+[
+    {
+        "tujuan":"Kuta Beach",
+        "budget":"Rp 750.000 - Rp 1.500.000",
+        "imgUrl":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/ea/ac/8a/kuta.jpg?w=1200&h=-1&s=1"
+    },
+    {
+        "tujuan":"Ubud Monkey Forest",
+        "budget":"450.000 - Rp 750.000",
+        "imgUrl":"https://images.flytographer.com/bfebe764-b069-4ac5-96d8-67319d0c4ef4/493-bali-solo-monkey-forest_1920.jpeg"
+    },
+    {
+        "tujuan":"Borobudur Temple",
+        "budget":"Rp 600.000 - Rp 1.200.000",
+        "imgUrl":"https://images.squarespace-cdn.com/content/v1/610f58ece563497f6c7fb7fc/1629265771220-M8LGAPIVMJVC9LPE77HI/borobudur_sunrise.jpg"
+    },
+    {
+        "tujuan":"Prambanan Temple",
+        "budget":"Rp 600.000 - Rp 1.200.000",
+        "imgUrl":"https://images.locationscout.net/2019/04/sunset-at-prambanan-temple-indonesia.jpg?h=1100&q=83"
+    },
+    {
+        "tujuan":"Mount Merapi",
+        "budget":"Rp 1.200.000 - 2.000.000",
+        "imgUrl":"https://asset.kompas.com/crops/I-mOe-LHEzi_VIKmXXBzCAZKNA0=/0x0:1800x1200/780x390/data/photo/2021/04/30/608bbe9b524d4.jpg"
+    },
+    {
+        "tujuan":"Wayang Island",
+        "budget":"Rp 3.000.000 - 5.000.000",
+        "imgUrl":"https://www.papuaexplorers.com/wp-content/uploads/2016/07/wayag2_home.jpg"
+    },
+    {
+        "tujuan":"Friwen Wall",
+        "budget":"Rp 3.000.000 - 5.000.000",
+        "imgUrl":"https://www.islander.io/wp-content/uploads/wpallimport/files/places/output1150w/Friwen%20island.jpg"
+    },
+    {
+        "tujuan":"Komodo National Park",
+        "budget":"Rp 1.050.000 - Rp 1.800.000",
+        "imgUrl":"https://media.istockphoto.com/id/472831484/photo/mountain-range-in-komodo-national-park-in-indonesia.jpg?s=612x612&w=0&k=20&c=G1r4BWvYe3EfE6l-DJNMA6I4E_xbQx5WPZqeWu2oQBg="
+    },
+    {
+        "tujuan":"Komodo Village",
+        "budget":"Rp 600.000 - Rp 1.050.000",
+        "imgUrl":"https://live.staticflickr.com/7200/6981776309_dc412d0f0c_b.jpg"
+    },
+    {
+        "tujuan":"Mount Rinjani",
+        "budget":"Rp 1.500.000 - Rp 4.000.000",
+        "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTcgDf0iyln1FnTZpCPRQVcDPW9YsXRrhWQ&usqp=CAU"
+    }, 
+    {
+        "tujuan":"Tangkuban Perahu",
+        "budget":"Rp 600.000 - Rp 1.200.000",
+        "imgUrl":"https://i.pinimg.com/originals/1e/2b/01/1e2b019bc4811b308fc09f4a094c0ba5.jpg"
+    },
+    {
+        "tujuan":"Ancol Dreamland",
+        "budget":"Rp 450.000 - Rp 750.000",
+        "imgUrl":"https://static.republika.co.id/uploads/images/inpicture_slide/salah-satu-titik-instagramable-di-ancol-_190618155653-825.jpg"
+    },
+    {
+        "tujuan":"Mount Bromo",
+        "budget":"Rp 750.000 - Rp 1.500.000s",
+        "imgUrl":"https://cdn.sweetescape.com/images/cities/bromo/cover/8b54e1f8-12f8-4877-aeba-fbd304fcbdaf-1080.jpg"
+    },
+    {
+        "tujuan":"Kanawa Island",
+        "budget":" Rp 1.500.000 - Rp 3.000.000",
+        "imgUrl":"https://i0.wp.com/oceanqueenkomodo.com/wp-content/uploads/2020/10/pulau-kanawa-NTT.jpg?fit=1280%2C855&ssl=1"
+    }
+]
