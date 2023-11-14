@@ -7,7 +7,13 @@ const auth = async (req, res, next) => {
       throw new Error("please login first");
     }
     let authen = authorization.split(" ")[1];
-    console.log(authen);
+
+    let data = decode(authen);
+    req.userInfo = {
+      id: data.id,
+      name: data.name,
+      email: data.email,
+    };
     next();
   } catch (error) {
     next(error);

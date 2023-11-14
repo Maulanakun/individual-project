@@ -17,11 +17,30 @@ module.exports = (sequelize, DataTypes) => {
       tujuan: {
         type: DataTypes.STRING,
         allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "please input tujuan",
+          },
+        },
       },
       budget: {
         type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "please input budget",
+          },
+        },
       },
-      imgUrl: DataTypes.STRING,
+      imgUrl: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "please input image",
+          },
+        },
+      },
     },
     {
       sequelize,
