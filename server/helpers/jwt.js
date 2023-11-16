@@ -9,6 +9,5 @@ const signToken = (payload) => {
 const decode = (token) => {
   return jwt.verify(token, SECRET_KEY);
 };
-// console.log(decode());
 
 module.exports = { signToken, decode };

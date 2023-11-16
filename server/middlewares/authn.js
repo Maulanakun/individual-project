@@ -13,6 +13,7 @@ const auth = async (req, res, next) => {
       id: data.id,
       name: data.name,
       email: data.email,
+      pfp: data.pfp,
     };
     next();
   } catch (error) {

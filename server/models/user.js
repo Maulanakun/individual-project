@@ -25,10 +25,10 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         validate: {
           notEmpty: {
-            msg: "please input email",
+            msg: "please input email 28",
           },
           notNull: {
-            msg: "please input email",
+            msg: "please input email 31",
           },
         },
       },
@@ -38,9 +38,6 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notEmpty: {
-            msg: "please input password",
-          },
-          notNull: {
             msg: "please input password",
           },
         },

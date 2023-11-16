@@ -4,10 +4,25 @@ const imagekit = require("../middlewares/imagekit");
 const { User } = require("../models");
 
 class UserClass {
+  static async getUser(req, res, next) {
+    try {
+      let data = await User.findOne({
+        where: {
+          email: req.userInfo.email,
+        },
+      });
+      res.status(200).json({
+        email: data.email,
+        pfp: data.pfp,
+        name: data.name,
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
   static async regist(req, res, next) {
     try {
       const { name, email, phoneNumber, password } = req.body;
-      console.log(name, email, phoneNumber, password);
       const base64 = req.file.buffer.toString("base64");
 
       let input = await imagekit.upload({
@@ -43,6 +58,7 @@ class UserClass {
           email,
         },
       });
+
       if (!data) {
         throw new Error("INVALID EMAIL/PASSWORD");
       }
@@ -53,6 +69,7 @@ class UserClass {
       const token = signToken({ id: data.id, name: data.name, email });
       res.status(201).json({ token });
     } catch (error) {
+      console.log(error);
       next(error);
     }
   }
