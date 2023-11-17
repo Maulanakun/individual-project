@@ -78,7 +78,7 @@ const Detail = () => {
     const location = async () => {
       try {
         const response = await axios.get(
-          `https://api.goapi.io/places?api_key=061ecc72-0add-5d2a-9849-5d36c739&search=${detail.tujuan}`
+          `https://api.goapi.io/places?api_key=2dbe9fab-f71b-534b-0f68-cd98df02&search=${detail.tujuan}`
         );
 
         const newCenter = {

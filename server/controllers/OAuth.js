@@ -1,6 +1,7 @@
 const { OAuth2Client } = require("google-auth-library");
 const { signToken } = require("../helpers/jwt");
 const { User } = require("../models");
+
 class GoogleLogin {
   static async loginGoogle(req, res, next) {
     try {
@@ -13,12 +14,13 @@ class GoogleLogin {
       });
       const payload = ticket.getPayload();
       console.log(payload);
+
       const [user, created] = await User.findOrCreate({
         where: {
           email: payload.email,
         },
-        default: {
-          name: payload.given_name,
+        defaults: {
+          name: payload.name,
           email: payload.email,
           phoneNumber: "+62",
           password: "password",
@@ -26,11 +28,13 @@ class GoogleLogin {
         },
         hooks: false,
       });
+
       const access_token = signToken({
         id: user.id,
         name: user.name,
         email: user.email,
       });
+
       res.status(201).json(access_token);
     } catch (error) {
       next(error);

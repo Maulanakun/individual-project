@@ -15,7 +15,7 @@ const Search = () => {
     e.preventDefault();
     try {
       let { data } = await axios.get(
-        `https://api.goapi.io/places?api_key=74f011ee-947c-50b8-9a0d-167ced06&search=${input}`
+        `https://api.goapi.io/places?api_key=2dbe9fab-f71b-534b-0f68-cd98df02&search=${input}`
       );
       setResults(data.data.results);
     } catch (error) {
