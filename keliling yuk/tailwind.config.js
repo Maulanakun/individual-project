@@ -29,6 +29,7 @@ export default {
     },
   },
   plugins: [
+    require("flowbite/plugin"),
     require("daisyui"),
     require("tw-elements/dist/plugin.cjs"),
     require("@tailwindcss/typography"),

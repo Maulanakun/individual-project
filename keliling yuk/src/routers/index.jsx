@@ -7,6 +7,7 @@ import Detail from "../pages/detail";
 import DestinationUser from "../pages/destinationUser";
 import Profile from "../pages/profile";
 import Search from "../pages/search";
+import FormAdd from "../pages/formAdd";
 
 const router = createBrowserRouter([
   {
@@ -66,6 +67,16 @@ const router = createBrowserRouter([
       {
         path: "/search",
         element: <Search />,
+        loader: async () => {
+          if (!localStorage.access_token) {
+            return redirect("/login");
+          }
+          return null;
+        },
+      },
+      {
+        path: "/formAdd/:tujuan",
+        element: <FormAdd />,
         loader: async () => {
           if (!localStorage.access_token) {
             return redirect("/login");
